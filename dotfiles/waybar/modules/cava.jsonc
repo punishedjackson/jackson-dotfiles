@@ -1,0 +1,10 @@
+{
+"custom/cava": {
+    "exec": "~/.config/waybar/modules/custom/cava.sh",
+    "format": "{}",
+    "sleep_timer": 2,
+    "hide_on_silence": true,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next"
+  }
+}
