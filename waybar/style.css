@@ -1,0 +1,136 @@
+@import url('../../.cache/wal/colors-waybar.css');
+
+* {
+    font-size:14px;
+    font-family: "Adwaita Mono";
+
+}
+window#waybar{
+    background: transparent;
+    all:unset;
+}
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 3px;
+    background-color: alpha(@colour1, .5);
+    margin: 10px 10px 0 10px;
+}
+tooltip {
+    background:@background;
+    color: @color7;
+}
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#custom-cava:hover,#network:hover,#battery:hover, #cpu:hover,#pulseaudio:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@color9;
+}
+#clock,#custom-cava,#tray{
+    padding: 0px 5px;
+    border-radius:10px;
+    color:@color14;
+    transition: all .3s ease;
+}
+#clock,#custom-cava,#custom-nowplaying,#tray,#custom-pacman,#workspaces,#network,#pulseaudio,#cpu,#battery{
+    background-color: alpha(@colour1, .9);
+    border-radius: 8px;
+    margin: 2px 4px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+    padding: 3px 12px;
+}
+#custom-pacman{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color14;
+
+}
+
+#workspaces {
+       	padding: 0px 5px;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: alpha(@color13,.4);
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: @color14;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: @color14;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#bluetooth{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+
+}
+#network{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color14;
+
+}
+#battery{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color14;
+
+
+}
+#battery.charging {
+    text-shadow: #26A65B;
+    color:@color14;
+}
+
+#battery.warning:not(.charging) {
+    text-shadow: #ffbe61;
+    color:@color14;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#cpu,#memory,#pulseaudio,#temperature{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color:@color14;
+
+}
+
+#tray{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+
+}
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
