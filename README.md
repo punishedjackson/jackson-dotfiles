@@ -6,3 +6,5 @@ pywal, cava, waybar, rofi
 
 # installation
 replace your folders in .config with this
+
+2026-04-11-000713_hyprshot.png
